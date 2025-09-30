@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Optima", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: 
+    url("../images/background.jpg"); 
+
+  background-size: cover;      
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.form-box {
+  position: relative;
+  background: rgba(24, 24, 24, 0.608);
+  padding: 100px 40px 40px; 
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgb(0, 0, 0);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-box i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #ffffff;
+}
+
+.input-box .toggle-password {
+  right: 15px;    
+  left: auto;     
+  color: #bbb;
+  cursor: pointer;
+}
+
+.form-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); 
+  background: #d3d2d2;
+  color: #222;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 8px 40px;
+  border-radius: 0 0 15px 15px; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-box input::placeholder {
+  color: #bbb;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: #bbb;
+}
+
+.options a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 50px;
+  background: #444;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #666;
+}
+
+.switch {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #bbb;
+}
+
+.switch a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.switch a:hover {
+  text-decoration: underline;
+}
+
+form {
+  display: none;
+  animation: fade 0.5s ease;
+}
+
+form.active {
+  display: block;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 100;
+}
+
+.success {
+  color: green;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 100;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #bbb;
+  cursor: pointer;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

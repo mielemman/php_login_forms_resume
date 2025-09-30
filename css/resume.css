@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: url("../images/background.jpg") no-repeat center center fixed; 
+    background-size: cover; 
+    line-height: 1.6;
+    color: #1a1a1a;
+}
+
+.resume-container {
+    display: flex;
+    width: 900px;
+    margin: 40px auto;
+    background: #ffffffeb;
+    box-shadow: 0 8px 25px #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(6px);
+}
+
+.sidebar {
+    width: 30%;
+    background: #161616;
+    color: #eaeaea;
+    padding: 25px 20px;
+}
+
+.sidebar h2 {
+    font-size: 16px;
+    margin: 25px 0 12px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f0f0f0;
+    font-weight: 600;
+}
+
+.sidebar p, 
+.sidebar li {
+    font-size: 13.5px;
+    margin-bottom: 6px;
+    color: #ccc;
+    line-height: 1.4;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 6px;
+}
+
+.profile-pic {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.profile-pic img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #444;
+}
+
+.main-content {
+    width: 70%;
+    padding: 35px 40px;
+}
+
+
+.resume-header {
+    background: #1e1e1e;
+    color: #fff;
+    padding: 25px;
+    margin: -35px -40px 30px -40px;
+    text-align: center;
+}
+
+.resume-header h1 {
+    font-size: 34px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.resume-header h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #ccc;
+    margin-top: 2px;
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+section h2 {
+    font-size: 18px;
+    margin-bottom: 14px;
+    color: #2b2b2b;
+    border-bottom: 2px solid #999;
+    padding-bottom: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+
+.job, .edu-item {
+    margin-bottom: 20px;
+}
+
+.job h3, .edu-item h3 {
+    font-size: 15.5px;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    color: #222;
+    font-weight: 700;
+}
+
+.job h3 span, .edu-item h3 span {
+    font-weight: 500;
+    font-size: 13px;
+    color: #555;
+    font-style: italic;
+}
+
+.job p, .edu-item p {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.job ul {
+    margin-left: 18px;
+    list-style: disc;
+}
+
+.job ul li {
+    font-size: 13.5px;
+    margin-bottom: 6px;
+    line-height: 1.5;
+    color: #1a1a1a;
+}
+
+.logout-form {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    margin: 0;
+    z-index: 1000; 
+}
+
+.logout-btn {
+    background: #292929;
+    color: #fff;
+    border: solid;
+    border-color: #111;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.logout-btn:hover {
+    background: #444;
+    transform: translateY(-2px);
+}
+
+.logout-btn:active {
+    background: #111;
+    transform: translateY(0);
+}
